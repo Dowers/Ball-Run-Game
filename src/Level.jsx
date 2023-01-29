@@ -162,12 +162,6 @@ export function BlockAxe({ position = [0, 0, 0] }) {
 					castShadow
 					receiveShadow
 				/>
-				<CuboidCollider
-					args={[2, 0.1, 2 * length]}
-					position={[0, -0, 1, -(length * 2) + 2]}
-					restitution={0.2}
-					friction={1}
-				/>
 			</RigidBody>
 		</group>
 	);
@@ -202,7 +196,7 @@ function BlockEnd({ position = [0, 0, 0] }) {
 }
 
 function Bounds({ length = 1 }) {
-	console.log(length);
+	// console.log(length);
 	return (
 		<>
 			<RigidBody type='fixed' restitution={0.2} friction={0}>
@@ -226,6 +220,12 @@ function Bounds({ length = 1 }) {
 					position={[0, 0.75, -(length * 4) + 2]}
 					scale={[4, 1.5, 0.3]}
 					receiveShadow
+				/>
+				<CuboidCollider
+					args={[2, 0.1, 2 * length]}
+					position={[0, -0.1, -(length * 2) + 2]}
+					restitution={0.2}
+					friction={1}
 				/>
 			</RigidBody>
 		</>
