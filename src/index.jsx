@@ -7,6 +7,8 @@ import Interface from './Interface';
 
 const root = ReactDOM.createRoot(document.querySelector('#root'));
 
+// Bruno Simon ThreeJSJourney - last lesson
+
 root.render(
 	<KeyboardControls
 		map={[
