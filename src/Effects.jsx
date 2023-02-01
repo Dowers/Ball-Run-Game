@@ -1,5 +1,7 @@
 import { SSR, DepthOfField, EffectComposer } from '@react-three/postprocessing';
 
+// Used to display effects - MAY NOT be used
+
 export default function Effects() {
 	return (
 		<EffectComposer>

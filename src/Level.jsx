@@ -4,6 +4,8 @@ import { RigidBody, CuboidCollider } from '@react-three/rapier';
 import { useState, useRef, useMemo } from 'react';
 import * as THREE from 'three';
 
+// Game level
+
 THREE.ColorManagement.legacyMode = false;
 
 const boxGeometry = new THREE.BoxGeometry(1, 1, 1);

@@ -3,6 +3,9 @@ import { addEffect } from '@react-three/fiber';
 import { useEffect, useRef } from 'react';
 import useGame from './stores/useGame';
 
+// This interface will contain all the information to be displayed.
+// We may need to rename this one gameInterface or come up with something else.
+
 export default function Interface() {
 	const time = useRef();
 
